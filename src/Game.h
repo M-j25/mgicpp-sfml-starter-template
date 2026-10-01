@@ -4,6 +4,14 @@
 
 #include <SFML/Graphics.hpp>
 
+
+enum class GameState
+{
+	MENU,
+	PLAYING,
+	GAMEOVER
+};
+
 class Game
 {
  public:
@@ -22,6 +30,18 @@ class Game
   
   sf::Texture background_texture;
   sf::Sprite background = sf::Sprite(background_texture);
+
+  sf::Texture bird_texture;
+  sf::Sprite bird = sf::Sprite(bird_texture);
+
+  sf::Font font;
+  sf::Text title_text = sf::Text(font);
+  
+
+
+
+
+  GameState game_state = GameState::MENU;
 
 };
 
