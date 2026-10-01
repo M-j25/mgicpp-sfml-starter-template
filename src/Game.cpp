@@ -115,7 +115,7 @@ void Game::keyPressed(const sf::Event::KeyPressed* event)
 	// You can tell which button was pressed by the scancode to SFML's definitions of keyboard keys
 	if (event->scancode == sf::Keyboard::Scancode::W)
 	{
-		//game_state = GameState::PLAYING;
+		game_state = GameState::PLAYING;
 		// W was pressed
 	}
 
