@@ -14,6 +14,7 @@ Game::~Game()
 }
 
 // We call this once after the game class is instantiated
+// Duhh
 bool Game::init()
 {
 
